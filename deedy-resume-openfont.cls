@@ -8,19 +8,16 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-% Geometry
+% Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
-
-% Hyperref
-\usepackage{hyperref}
-\hypersetup{colorlinks, breaklinks, urlcolor=SkyBlue, linkcolor=SkyBlue}
+\usepackage[hidelinks]{hyperref}
 
 % Publications
 \usepackage{cite}
 \renewcommand\refname{\vskip -1.5cm}
 
 % Color definitions
-\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[usenames,dvipsnames]{xcolor} 
 \definecolor{date}{HTML}{666666} 
 \definecolor{primary}{HTML}{2b2b2b} 
 \definecolor{headings}{HTML}{6A6A6A}
@@ -38,7 +35,7 @@
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
-% Last Updated on \today
+Last Updated on \today
 \end{textblock}}
 
 % Name command
@@ -63,18 +60,18 @@
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Regular}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{
@@ -84,3 +81,4 @@
 \newenvironment{tightemize}{
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
+

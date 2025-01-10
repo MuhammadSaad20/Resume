@@ -1,0 +1,232 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Muhammad}{Saad}{ \urlstyle{same}\href{https://www.linkedin.com/in/muhammad-saad-ms}{linkedin/muhammad-saad-ms}   |   \href{https://github.com/MuhammadSaad20}{github/MuhammadSaad20}\\
+                          +92 323 2978 188 | \href{mailto:msaad12199@gmail.com}{msaad12199@gmail.com
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{FAST NUCES}
+\descript{BS in Computer Science}
+\location{July 2021| Karachi, Pakistan}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages  }
+\location{}
+Java  \textbullet{} Python \textbullet{} JavaScript \\
+HTML / CSS  \textbullet{} SQL  \\ 
+\vspace{0.3 em}
+\subsection{Frameworks }
+\location{}
+Selenium \textbullet{} TestNG \textbullet{} Appium \\
+Cucumber  (BDD)  \textbullet{} PyUnit (TDD)  \\
+\vspace{0.3 em}
+\subsection{Testing Skills}
+\location{}
+\textbullet{} \textbf{Manual Testing} (Functional, Regression, UAT, Smoke, Sanity Testing)\\
+\vspace{0.2 em}
+\textbullet{} \textbf{Test Automation} (UI and API testing) \\
+\vspace{0.2 em}
+\textbullet{} \textbf{CI/CD Pipelines} (Jenkins, Azure DevOps) \\
+\vspace{0.2 em}
+\textbullet{} \textbf{Agile Methodologies} (Scrum, Sprint Planning) \\
+\vspace{0.2 em}
+\textbullet{} \textbf{Database Testing} (SQL, PostgreSQL, NoSQL) \\
+\vspace{0.2 em}
+\textbullet{} \textbf{API Testing} (Postman) \\
+\vspace{0.2 em}
+\textbullet{} \textbf{Problem Solving} (Troubleshooting, Debugging) \\
+\vspace{0.2 em}
+\textbullet{} \textbf{Generative AI}\textbf{ (}GPT, T5, LLaMa, Codex\textbf{ )} \\
+\vspace{0.2 em}
+\textbullet{} \textbf{Performance Testing}: JMeter, K6\\
+\vspace{0.3 em}
+\subsection{Developer  Tools}
+\location{}
+Git \textbullet{} Docker \textbullet{} AWS \\
+Nginx \textbullet{}  Putty \textbullet{} Fiddler  \\
+VS Code \textbullet{}  Visual Studio \textbullet{} Intelij  \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Achievements}
+\subsection{Certification  }
+\location{}
+ \textbullet{} ISTQB Certified Tester {\scriptsize 24-CTFL4-1313-PK} \\
+ \vspace{0.1 em}
+\textbullet{}  Selenium Web driver Framework \\
+\vspace{0.1 em}
+\subsection{Awards }
+\location{}
+  \textbullet{} Departmental Innovation Award  {\scriptsize '24}\\
+  \vspace{0.1 em}
+\textbullet{}  Departmental Star Performer Award {\scriptsize '23}\\
+\vspace{0.1 em}
+\textbullet{}  Github Arctic Code Vault Contributor {\scriptsize '20}\\
+\vspace{0.1 em}
+
+\subsection{Research Paper }
+\location{}
+ \textbullet{} Published research paper on \href{https://ieeexplore.ieee.org/document/10099364}{Real-Time Object Detection} at the 4th \href{https://www.ieee.org/conferences/index.html}{iCoMET} {\scriptsize '23}\\ 
+ \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Interests}
+\location{}
+ \textbullet{}  Exploring New Technologies \\
+\textbullet{}   Healthy Eating and Fitness  \\
+\textbullet{}   Knowledge sharing and mentorship\\
+ \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Astera Software}
+\descript{| Senior QA Engineer }
+\location{ June 2021 - Present | Hybrid, Westlake Village, CA , USA | Karachi , Pakistan}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Engineered \textbf{API flow automation} and implemented \textbf{regression testing} within the \textbf{CI/CD pipeline}, achieving a \textbf{90\% reduction in test execution time} and expediting testing cycles to support \textbf{faster releases}.
+\item Developed and executed \textbf{300+ manual and automated test cases}, achieving \textbf{~90\% test coverage} to meet requirements and ensure product quality.
+  \item Conducted \textbf{functional, non-functional}, and exploratory testing, ensuring \textbf{100\%} requirement validation and \textbf{99\%} feature reliability.
+\item Developed and implemented an \textbf{end-to-end automation framework} for UI testing, \textbf{cutting manual effort by 50\%} and improving test cycle efficiency.
+     \item Established baseline regression testing for API, data pipelines, and EDI systems, ensuring \textbf{90\% } product stability.
+     \item Performed \textbf{performance and API testing} for multi-tenant architecture, ensuring \textbf{90\%-95\%} (approx) system up time and seamless integration.
+    \item Optimized testing environments with \textbf{Dockerized containers}, improving server utilization by \textbf{200\%}.
+    \item Authored \textbf{1000+} test plans, scenarios, and defect reports, ensuring \textbf{100\%} alignment with business goals.
+\item Leveraged \textbf{Generative AI} models for automated test data generation and optimization of test cases, reducing manual effort.
+    \item Resolved \textbf{100+ customer-reported issues} by debugging and collaborating with cross-functional teams to enhance system reliability.
+    \item Refactored \textbf{ETL solutions} for 20+ customers, improving processing times and efficiency.
+\item Conducted monthly knowledge-sharing sessions for 10+ team members on \textbf{CI/CD}, and \textbf{regression testing automation}.
+  \item Configured backend proxy servers to enhance API isolation by \textbf{50\%}, optimizing performance for customer proof-of-concept (POC) environments.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{TripleK Technologies}
+\descript{| Associate Software Engineer    }
+\location{April 2021 – June 2021 |  Remote, Pakistan}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+ \item Integrated cloud provider API, enhancing application functionality.
+\item Improved stakeholder communication, optimizing the hiring process and increasing engineering hires.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{WebNetik (Pvt) Ltd }
+\descript{| Software Developer Intern   }
+\location{July 2020 – Aug 2020 | Remote, Pakistan}
+\begin{tightemize}
+ \item Integrated a calendar plugin to enhance scheduling and event management.
+ \item Streamlined deployment processes, reducing downtime and improving performance.
+\end{tightemize}
+\sectionsep
+
+\section{Projects}
+\vspace{1.5 em} % Adjust the value (e.g., 0.5em or 1em) to set the desired vertical spacing.
+\begin{tightemize}
+\item \textbf{\href{https://github.com/SafeDrive120}{Safe Drive}}: Developed a mobile application for collision prediction and real-time warning systems, enhancing road safety.
+\item \textbf{\href{https://github.com/MuhammadSaad20/FoodAIN}{Food AI}}: Created a desktop application for local food image recognition and AI-powered meal recommendations.
+\item \textbf{\href{https://github.com/MuhammadSaad20/SAVESLIFE/tree/master}{Saves Life}}: Designed a web-based blood donation platform, streamlining client-donor connections for better blood availability.
+\end{tightemize}
+\sectionsep
+\end{minipage} 
+\end{document}  \documentclass[]{article}
